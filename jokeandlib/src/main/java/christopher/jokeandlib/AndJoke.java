@@ -1,4 +1,6 @@
 package christopher.jokeandlib;
 
-public class AndJoke {
+import android.support.v7.app.AppCompatActivity;
+
+public class AndJoke extends AppCompatActivity {
 }
