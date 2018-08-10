@@ -1,16 +1,12 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import christopher.builditbigger.Joke;
-import christopher.jokeandlib.AndJoke;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new EndpointAsync().execute(new Pair<Context, String>(this, "Manfred"));
+
     }
 
 
@@ -47,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        Joke jokeObj = new Joke();
+       /* Joke jokeObj = new Joke();
 
         //Intent to launch android library joke class
         Intent intent = new Intent(this, AndJoke.class);
         //Place string from java library joke class to android library joke class
         intent.putExtra(getString(R.string.passJoke), jokeObj.tellJoke());
-        startActivity(intent);
+        startActivity(intent);*/
+
+        new EndpointAsync().execute(new Pair<Context, String>(this, "Manfred"));
     }
-
-
 }

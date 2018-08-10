@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 public class AndJoke extends AppCompatActivity {
 
+    public static String JOKE_EXTRA = "JOKE_EXTRA";
+
     TextView displayJoke;
 
     @Override
@@ -20,7 +22,7 @@ public class AndJoke extends AppCompatActivity {
         String jokeFromJokeActivity = null;
         //get intent
         Intent intent = getIntent();
-        jokeFromJokeActivity = intent.getStringExtra(getString(R.string.passJoke));
+        jokeFromJokeActivity = intent.getStringExtra(JOKE_EXTRA);
 
         //update textview with extra from intent
 
