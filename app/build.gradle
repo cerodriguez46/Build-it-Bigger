@@ -50,5 +50,5 @@ dependencies {
 
     implementation project (':javaJokeLib')
    implementation project (':jokeandlib')
-    endpointsServer project(path: ':backend', configuration: 'endpoints')
+
 }
