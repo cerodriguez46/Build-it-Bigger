@@ -8,7 +8,7 @@ import javax.inject.Named;
 
 import christopher.builditbigger.Joke;
 
-/** An endpoint class we are exposing */
+
 @Api(
         name = "myApi",
         version = "v1",
@@ -20,7 +20,7 @@ import christopher.builditbigger.Joke;
 )
 public class MyEndpoint {
 
-    /** A simple endpoint method that takes a name and says Hi back */
+
     @ApiMethod(name = "sayHi")
     public MyBean sayHi(@Named("name") String name) {
         MyBean response = new MyBean();
